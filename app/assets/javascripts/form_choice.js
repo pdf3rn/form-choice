@@ -16,9 +16,6 @@ export default class ChoicesField extends Controller {
 
     reload() {
         if (this.field.getAttribute("fetch")) {
-            // this.choice.clearChoices();
-            // this.choice.clearInput();
-            console.log(this.choice)
             let placeholder = this.choice._placeholderValue;
             let path = this.field.getAttribute("fetch");
             let params = this.field.getAttribute("params");
